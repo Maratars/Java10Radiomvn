@@ -15,7 +15,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testStation0() {
+    public void testStationMin() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(0);
@@ -26,7 +26,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testStationUnder0() {
+    public void testStationUnderMin() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(-1);
@@ -37,7 +37,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testStationOver0() {
+    public void testStationOverMin() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(1);
@@ -48,7 +48,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testStation8() {
+    public void testStationUnderMax() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(8);
@@ -59,7 +59,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testStation9() {
+    public void testStationMax() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(9);
@@ -70,7 +70,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testStationOver9() {
+    public void testStationOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(10);
@@ -93,7 +93,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testNextStation8() {
+    public void testNextStationUnderMax() {
         Radio radio = new Radio();
         radio.setCurrentStation(8);
 
@@ -105,7 +105,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testNextStation9() {
+    public void testNextStationMax() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
 
@@ -129,7 +129,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testPrevStation0() {
+    public void testPrevStationMin() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
 
@@ -141,7 +141,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testPrevStation1() {
+    public void testPrevStationOverMin() {
         Radio radio = new Radio();
         radio.setCurrentStation(1);
 
@@ -153,7 +153,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testPrevStation9() {
+    public void testPrevStationMax() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
 
@@ -177,7 +177,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testVolume0() {
+    public void testVolumeMin() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
@@ -188,7 +188,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testVolumeUnder0() {
+    public void testVolumeUnderMin() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(-1);
@@ -199,7 +199,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testVolumeOver0() {
+    public void testVolumeOverMin() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(1);
@@ -210,7 +210,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testVolume10() {
+    public void testVolumeMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(10);
@@ -221,7 +221,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testVolume9() {
+    public void testVolumeUnderMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(9);
@@ -232,7 +232,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testVolume11() {
+    public void testVolumeOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(11);
@@ -255,7 +255,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testIncreaseVolume10() {
+    public void testIncreaseVolumeMax() {
         Radio radio = new Radio();
         radio.setCurrentVolume(10);
 
@@ -267,7 +267,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testIncreaseVolume9() {
+    public void testIncreaseVolumeUnderMax() {
         Radio radio = new Radio();
         radio.setCurrentVolume(9);
 
@@ -291,7 +291,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testDecreaseVolume0() {
+    public void testDecreaseVolumeMin() {
         Radio radio = new Radio();
         radio.setCurrentVolume(0);
 
@@ -303,7 +303,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testDecreaseVolume1() {
+    public void testDecreaseVolumeOverMin() {
         Radio radio = new Radio();
         radio.setCurrentVolume(1);
 
